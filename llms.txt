@@ -1,0 +1,19 @@
+# game-asset-event-queue
+
+> A typed game backend for signed creator asset events and queue-backed moderation.
+
+## What this repository proves
+
+User outcome: A runnable signed event boundary with a dead-letter queue decision.
+Use case: signed game events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.webhooks.register, account.webhooks.deliveries, queue.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/game_event_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

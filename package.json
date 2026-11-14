@@ -1,0 +1,16 @@
+{
+  "name": "game-asset-event-queue",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/game_event_service.ts",
+    "test": "node --experimental-strip-types --test src/game_event_service.test.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
